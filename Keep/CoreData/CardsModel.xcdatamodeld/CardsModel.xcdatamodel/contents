@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="21G419" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Card" representedClassName=".Card" syncable="YES">
+        <attribute name="backText" optional="YES" attributeType="String"/>
+        <attribute name="frontText" optional="YES" attributeType="String"/>
+        <attribute name="sourceLanguage" optional="YES" attributeType="String"/>
+        <attribute name="targetLanguage" optional="YES" attributeType="String"/>
+        <relationship name="collection" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CardCollection" inverseName="cards" inverseEntity="CardCollection"/>
+    </entity>
+    <entity name="CardCollection" representedClassName=".CardCollection" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="cards" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Card" inverseName="collection" inverseEntity="Card"/>
+    </entity>
+</model>
