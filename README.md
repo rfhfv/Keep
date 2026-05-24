@@ -1,24 +1,38 @@
-## **Keep**
+# Keep
 
-Keep - это простое и функциональное iOS-приложение для изучения иностранных слов.
+iOS flashcard app for learning foreign words built with Swift + MVVM + Coordinator. Create collections of cards with translations, practice memorization with training mode, and listen to pronunciation via Voice RSS API. Supports light/dark mode.
 
-## **Ссылки**
+## Screenshots
 
-[API Voice RSS](https://www.voicerss.org/api/)
+<img width="1300" height="782" alt="Image" src="https://github.com/user-attachments/assets/d32d2929-1461-4c37-918c-9eacc51791f7" />
 
-## **Описание приложения**
-Интерактивное приложение для создания карточек и запоминания иностранных слов. 
-Пользователь создает коллекции карточек с переводом, а затем тренирует их запоминание в режиме обучения.
+## Features
 
-<img width="3587" height="2556" alt="Image" src="https://github.com/user-attachments/assets/0b9a13df-ac59-44ca-b987-89bd0777d3f3" />
+- **Create Collections:** Organize cards into custom collections
+- **Flashcards:** Create cards with foreign words and translations
+- **Text-to-Speech:** Listen to pronunciation via Voice RSS API
+- **Training Mode:** Practice memorization with interactive sessions
+- **Dark/Light Mode:** Full support for both themes
 
-## **Архитектура**
+## Tech Stack
 
-MVVM + Coordinator
+- **Swift** + **UIKit**
+- **MVVM** + **Coordinator** architecture
+- **Core Data** for local persistence
+- **Voice RSS API** for pronunciation
+- **AVFoundation** for audio playback
 
-## **Функциональность**
+## Architecture
 
-- Создание коллекций
-- Создание и озвучка контента
-- Тренировки
-- Поддержка светлой/темной темы
+The project follows MVVM + Coordinator architecture:
+
+- **View:** UIKit views, programmatic layout
+- **ViewModel:** Business logic, state management
+- **Model:** Core Data entities
+- **Coordinator:** Navigation and flow management
+
+## Installation
+
+- git clone https://github.com/rfhfv/Keep.git
+- cd Keep
+- open Keep.xcodeproj
